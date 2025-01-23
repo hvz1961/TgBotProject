@@ -20,6 +20,7 @@ WEATHER_API_KEY = API_KEY
 async def start_command(message: Message):
     await message.answer(f"Привет, {message.from_user.full_name}!\nЯ бот и могу помочь с:\n"
                          "/weather <город> - Узнать погоду\n"
+                         "/photo - Получить фото\n"
                          "/translation - Перевод текста на английский\n"
                          "/help - Доступные команды")
 
@@ -29,6 +30,7 @@ async def help_command(message: Message):
     await message.answer("Список доступных команд:\n"
                          "/start - Приветствие\n"
                          "/weather <город> - Узнать погоду\n"
+                         "/photo - Получить фото\n"
                          "/translation - Перевод текста на английский"
                         )
 
