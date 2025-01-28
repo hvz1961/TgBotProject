@@ -31,18 +31,3 @@ back_keyboard = InlineKeyboardMarkup(inline_keyboard=[[back_button]])
 # Создаем клавиатуру с кнопками "Опция 1" и "Опция 2"
 options_keyboard = InlineKeyboardMarkup(inline_keyboard=[[option1_button, option2_button]])
 
-
-#
-# test = ["кнопка 1", "кнопка 2", "кнопка 3", "кнопка 4"]
-#
-# async def test_keyboard():
-#    keyboard = InlineKeyboardBuilder()
-#    for key in test:
-#        keyboard.add(InlineKeyboardButton(text=key, url='https://youtube.com/shorts/JV0e33az6GE'))
-#    return keyboard.adjust(2).as_markup()
-
-# async def test_keyboard():
-#    keyboard = ReplyKeyboardBuilder()
-#    for key in test:
-#        keyboard.add(KeyboardButton(text=key))
-#    return keyboard.adjust(2).as_markup()
