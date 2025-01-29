@@ -35,16 +35,17 @@ def get_breed_info(breed_name):
            return breed
    return None
 
-def translate_to_russian(text):
-    """
-    Переводит текст на русский язык с помощью Google Translate.
-    """
-    try:
-        translated = translator.translate(text, dest='ru')
-        return translated.text
-    except Exception as e:
-        print(f"Ошибка перевода: {e}")
-        return text  # Возвращаем исходный текст в случае ошибки
+# def translate_to_russian(text):
+#     """
+#     Переводит текст на русский язык с помощью Google Translate.
+#     """
+#     try:
+#         translated = translator.translate(text, dest='ru')
+#         return translated.text
+#     except Exception as e:
+#         print(f"Ошибка перевода: {e}")
+#         return text  # Возвращаем исходный текст в случае ошибки
+
 @dp.message(Command("start"))
 async def start_command(message: Message):
    await message.answer("Привет! Напиши мне название породы кошки, и я пришлю тебе её фото и описание.")
